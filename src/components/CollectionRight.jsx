@@ -24,7 +24,7 @@ export const CollectionRight = () => {
                 </div>
                 <div className='flex mt-[100px] mb-10 justify-end'>
                     <div className='flex items-end'>
-                        <a target="_blank" href="https://drive.google.com/file/d/1xoPvF5VWCY6MuEfFdz3W1KwyIVQb_9JO/view?usp=sharing">
+                        <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1xoPvF5VWCY6MuEfFdz3W1KwyIVQb_9JO/view?usp=sharing">
                             <button className=' font-bold px-6 py-2 rounded-full text-3xl bg-[#c2df4e] text-[#15181B]'>
                                 Join Waitlist
                             </button>

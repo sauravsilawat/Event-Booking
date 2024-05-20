@@ -19,23 +19,23 @@ export const FirstPage = () => {
             <section className='flex justify-start items-center'>
                 <div className='mt-[60px] flex flex-col gap-10 mx-[250px] h-[600px] text-6xl font-semibold'>
                     <p className='flex gap-4 items-center'>
-                        WE <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '470px', '--end-width': '200px' }} src={eight} /> ORGANIZE THE
+                        WE <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '470px', '--end-width': '200px' }} src={eight} alt='p1' /> ORGANIZE THE
                     </p>
 
                     <p className='flex gap-4 items-center'>
-                        CONNECTION <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '590px', '--end-width': '300px' }} src={four} />
+                        CONNECTION <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '590px', '--end-width': '300px' }} src={four} alt='p2' />
                     </p>
 
                     <p className='flex gap-4 items-center'>
-                        <img className='img-animation h-[70px] object-none' style={{ '--start-width': '150px', '--end-width': '390px' }} src={one} /> BETWEEN <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '100px', '--end-width': '90px' }} src={three} /> MUSIC
+                        <img className='img-animation h-[70px] object-none' style={{ '--start-width': '150px', '--end-width': '390px' }} src={one} alt='p3' /> BETWEEN <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '100px', '--end-width': '90px' }} src={three} alt='p4' /> MUSIC
                     </p>
 
                     <p className='flex gap-4 items-center'>ARTIST
-                        <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '150px', '--end-width': '130px' }} src={nine} /> CULTURE <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '350px', '--end-width': '100px' }} src={two} />
+                        <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '150px', '--end-width': '130px' }} src={nine} alt='p5' /> CULTURE <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '350px', '--end-width': '100px' }} src={two} alt='p6' />
                     </p>
 
                     <p className='flex gap-4 items-center'>
-                        ART & <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '250px', '--end-width': '410px' }} src={six} /> COLLECTIONS
+                        ART & <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '250px', '--end-width': '410px' }} src={six} alt='p7' /> COLLECTIONS
                     </p>
                 </div>
             </section>
