@@ -14,7 +14,7 @@ export const EventLeft = () => {
     return (
         <div className='pt-[40px] overflow-hidden relative'>
             <img src={logo} className='relative w-[180px] ml-10' alt="logo" />
-            <div className='mt-[80px] ml-10 text-9xl font-bold text-[#6c7176]'>
+            <div className='md:mt-[120px] mt-[80px] ml-10 md:text-9xl text-8xl font-bold text-[#6c7176]'>
                 <h1>ASTR <br /> IX</h1>
                 <h1 className='mt-[100px]'>EV <br /> ENTS</h1>
             </div>

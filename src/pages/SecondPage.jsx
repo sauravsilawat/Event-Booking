@@ -11,8 +11,8 @@ export const SecondPage = () => {
     setSelected(prevSelected => !prevSelected);
   }
   return (
-    <div className='bg-[#15181B] text-white flex h-auto'>
-      <section className='relative w-[53%]'>
+    <div className='bg-[#15181B] text-white flex md:flex-row flex-col h-auto'>
+      <section className='relative md:w-[53%]'>
         {selected ?
           <EventLeft /> :
           <CollectionLeft selected={selected} />
@@ -22,7 +22,7 @@ export const SecondPage = () => {
           <button onClick={onclickSelect} className={`${!selected ? 'bg-[#6c7176]' : ''} px-6 py-4  rounded-full`}>Collections</button>
         </div>
       </section>
-      <section className='bg-[#B9A0FF] w-[7%]'>
+      <section className='bg-[#B9A0FF] w-[7%] hidden md:block'>
         <AnimatePresence>
           <div className='overflow-hidden h-[160vh]'>
             <motion.h1
@@ -44,7 +44,7 @@ export const SecondPage = () => {
           </div>
         </AnimatePresence>
       </section>
-      <section className='w-[40%]'>
+      <section className='md:w-[40%]'>
         {selected ?
           <EventRight /> :
           <CollectionRight />

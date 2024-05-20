@@ -8,11 +8,10 @@ export const Carousel = ({ imgObj, selected }) => {
   const [centerIndex, setCenterInd] = useState(0);
 
  useEffect(() => {
-  let isCancelled = false; // Flag to indicate if the effect has been cancelled
-
+  let isCancelled = false; 
   const sequence = async () => {
     for (let i = 0; i < images.length; i++) {
-      if (isCancelled) return; // Exit if the effect has been cancelled
+      if (isCancelled) return; 
       setCenterInd(i);
       await controls.start({ x: -(imageWidth * i) });
       await new Promise(resolve => setTimeout(resolve, 1500));
@@ -26,18 +25,13 @@ export const Carousel = ({ imgObj, selected }) => {
     sequence();
   }
 
-  // Cleanup function to cancel the animation when the component re-renders or unmounts
   return () => {
-    isCancelled = true; // Set the cancellation flag
+    isCancelled = true; 
     if (controls) {
       controls.stop();
     }
   };
-}, [controls, images.length, selected]); // Include selected in the dependency array
-
-
-
-
+}, [controls, images.length, selected]); 
 
   return (
     <div>
@@ -50,7 +44,7 @@ export const Carousel = ({ imgObj, selected }) => {
         {images.map((img, i) => (
 
           !selected ?
-            (<div className="w-[380px] inline-block relative" key={i}>
+            (<div className="md:w-[380px] w-[300px] inline-block relative" key={i}>
               <motion.img
                 src={img}
                 className={`${i !== centerIndex ? 'shade' : ''}`}
@@ -62,7 +56,7 @@ export const Carousel = ({ imgObj, selected }) => {
               </div>)}
             </div>)
             :
-            (<div className="w-[380px] inline-block" key={i}>
+            (<div className="md:w-[380px] w-[300px] inline-block" key={i}>
               <div>
                 <h1 className='font-bold text-4xl'>Lunar Palace:</h1>
                 <h2 className='text-2xl font-semibold'>(ft. Kayne west)</h2>

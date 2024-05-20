@@ -16,8 +16,8 @@ export const FirstPage = () => {
     return (
         <div className='bg-[#FFF4DF] pt-[40px] pb-4 h-full'>
             <img src={logo} className='w-[180px] ml-10' alt="logo" />
-            <section className='flex justify-start items-center'>
-                <div className='mt-[60px] flex flex-col gap-10 mx-[250px] h-[600px] text-6xl font-semibold'>
+            <section className='flex md:overflow-auto overflow-hidden justify-start items-center'>
+                <div className='mt-[60px] flex flex-col gap-10 md:mx-[250px] h-[600px] md:text-6xl text-2xl font-semibold'>
                     <p className='flex gap-4 items-center'>
                         WE <img className='img-animation h-[70px] object-cover' style={{ '--start-width': '470px', '--end-width': '200px' }} src={eight} alt='p1' /> ORGANIZE THE
                     </p>
@@ -43,7 +43,7 @@ export const FirstPage = () => {
                 <div className=' w-full border border-t-[1px] mb-4 border-[#f6c6b6] mt-10'></div>
                 <div className='overflow-hidden'>
                     <motion.h1
-                        className='text-[#f6c6b6] font-crisis font-bold tracking-widest text-5xl'
+                        className='text-[#f6c6b6] md:font-crisis font-sans font-bold  md:tracking-widest md:text-5xl text-2xl'
                         initial={{ x: '-100%' }}
                         animate={{ x: ['100%', '-100%'] }}
                         transition={{

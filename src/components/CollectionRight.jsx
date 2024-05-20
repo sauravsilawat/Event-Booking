@@ -7,9 +7,9 @@ export const CollectionRight = () => {
         <div>
             <div className='px-12'>
                 <h2 className='font-semibold text-3xl mt-[60px]'>Explore Your First <br /> Collecible</h2>
-                <h1 className='font-bold text-6xl mt-[60px]'>Meta Lives</h1>
+                <h1 className='font-bold md:text-6xl text-4xl md:mt-[60px] mt-[100px]'>Meta Lives</h1>
                 <h2 className='mt-[30px] font-semibold text-2xl'>Live in Astrix</h2>
-                <p className='mt-[15px] font-semibold pr-[150px]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, nam cum, vitae et ea porro error odit laboriosam.</p>
+                <p className='mt-[15px] font-semibold md:pr-[150px]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, nam cum, vitae et ea porro error odit laboriosam.</p>
 
                 <div className='flex mt-[30px] items-center gap-2'>
                     <img src={reaction} className='w-[200px]' alt="" />
