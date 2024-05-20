@@ -30,9 +30,9 @@ export const EventRight = () => {
 
             <h2 className='mt-[30px] font-semibold text-2xl'>Artist Lineup</h2>
             <div className='flex items-center mt-[50px]'>
-                <img src={s1} className=' w-[80px] h-[80px] rounded-l-lg object-cover' alt="singer1" />
-                <img src={s2} className=' w-[150px] h-[150px] rounded-lg object-cover' alt="singer1" />
-                <img src={s3} className=' w-[80px] h-[80px] rounded-r-lg object-cover' alt="singer1" />
+                <img src={s1} className=' w-[80px] h-[80px] md:w-[200px] md:h-[200px] rounded-l-lg object-cover' alt="singer1" />
+                <img src={s2} className=' w-[150px] h-[150px] md:w-[250px] md:h-[250px] rounded-lg object-cover' alt="singer1" />
+                <img src={s3} className=' w-[80px] h-[80px] md:w-[200px] md:h-[200px] rounded-r-lg object-cover' alt="singer1" />
             </div>
             <div className='flex md:flex-row flex-col md:gap-0 gap-4 md:mt-[150px] mt-[100px] mb-10 justify-between'>
                 <div>
